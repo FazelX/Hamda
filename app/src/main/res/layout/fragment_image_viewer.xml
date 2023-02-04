@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    uploading image cover layout    -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upload_image_cover_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_white"
+        android:visibility="gone"
+        android:translationZ="90dp"
+        >
+
+        <!--    uploading image progressbar    -->
+        <ProgressBar
+            android:id="@+id/uploading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:progressTint="@android:color/holo_green_light"/>
+
+        <!--    uploading image text    -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_margin="15dp"
+            android:text="@string/image_upload_in_progress"
+            app:layout_constraintStart_toStartOf="@id/uploading_progress"
+            app:layout_constraintEnd_toEndOf="@id/uploading_progress"
+            app:layout_constraintTop_toBottomOf="@id/uploading_progress"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    captured image preview    -->
+    <ImageView
+        android:id="@+id/captured_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--    upload image button    -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_image_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_send_24"
+        app:backgroundTint="@android:color/holo_blue_light"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CameraTest</string>
+    <string name="capture">Capture</string>
+    <string name="image_upload_in_progress">در حال ارسال عکس٬ لطفا کمی صبر کنید!</string>
+</resources>
